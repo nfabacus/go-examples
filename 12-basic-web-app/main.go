@@ -1,21 +1,14 @@
 package main
 
 import (
-	"fmt"
 	"net/http"
 )
 
-func Home(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprint(w, "This is the Home page")
-}
-
-func About(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprint(w, "This is the About page")
-}
+const portNumber = ":8080"
 
 func main() {
 	http.HandleFunc("/", Home)
 	http.HandleFunc("/about", About)
 
-	_ = http.ListenAndServe(":8080", nil)
+	_ = http.ListenAndServe(portNumber, nil)
 }
