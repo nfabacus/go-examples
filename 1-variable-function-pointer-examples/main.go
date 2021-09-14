@@ -36,6 +36,12 @@ func main() {
 	log.Println(greeting)
 	log.Println("X is now", x)
 
+	fmt.Printf("name is %q, othername is %q, onemorename is %v\n", "Mike", "Bob", "Kate")
+	fmt.Printf("Boolean is %v\n", true)
+	fmt.Printf("nummer: %2d\n", 31)
+	var age = 27
+	fmt.Printf("age is %2d\n", age)
+
 }
 
 func saySomething(myParam string) (string, string) {
