@@ -23,7 +23,7 @@ func main() {
 	}
 
 	myVar := "dog"
-
+	// go will break out without 'return' or 'break' unlike javascript
 	switch myVar {
 	case "dog":
 		fmt.Printf("myVar is set to dog")
