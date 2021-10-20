@@ -23,4 +23,4 @@ func main() {
 	fmt.Println(users["person1"].FirstName)
 }
 
-// map is not sorted. You always have to look up by key.
+// *** map is not sorted. You always have to look up by key. ***
