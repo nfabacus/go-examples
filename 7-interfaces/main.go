@@ -33,6 +33,8 @@ func main() {
 
 	PrintInfo(&cat)
 
+	fmt.Println(dog.Says())
+
 }
 
 func PrintInfo(a Animal) {
